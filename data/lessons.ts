@@ -10,7 +10,7 @@ export const lessons: Lesson[] = [
     duration: 10,
     completed: false,
     content: `
-# Variables and Data Types
+Variables and Data Types
 
 In JavaScript, variables are containers for storing data values. You can declare variables using:
 
@@ -18,7 +18,7 @@ In JavaScript, variables are containers for storing data values. You can declare
 - let: Block scoped, can be reassigned
 - const: Block scoped, cannot be reassigned
 
-## Basic Data Types
+Basic Data Types
 
 JavaScript has several primitive data types:
 
@@ -57,7 +57,7 @@ console.log(typeof isStudent); // "boolean"
 
 Functions are reusable blocks of code designed to perform specific tasks.
 
-## Function Declarations vs Expressions
+ Function Declarations vs Expressions
 
 There are multiple ways to define functions in JavaScript:
 
@@ -112,7 +112,7 @@ const multiply = (a, b) => a * b;
 
 Debugging is the process of identifying and fixing errors in your code. JavaScript provides several tools and techniques for debugging.
 
-## Using \`console.log()\`
+ Using \`console.log()\`
 
 The simplest way to debug is by logging values to the console.
 
@@ -121,7 +121,7 @@ const x = 10;
 console.log('Value of x:', x);
 
 
-## Using Breakpoints
+ Using Breakpoints
 
 You can set breakpoints in your browser's developer tools to pause execution and inspect variables.
 
@@ -131,7 +131,7 @@ You can set breakpoints in your browser's developer tools to pause execution and
 4. Reload the page or trigger the code to hit the breakpoint.
 
 
-## Debugger Statement
+ Debugger Statement
 
 The \`debugger\` statement pauses execution if developer tools are open.
 
@@ -144,7 +144,7 @@ function add(a, b) {
 add(2, 3);
 
 
-## Error Messages
+ Error Messages
 
 Pay attention to error messages in the console. They provide useful information about the type and location of the error.
 
@@ -153,7 +153,7 @@ const obj = {};
 console.log(obj.property.nonExistent); // TypeError: Cannot read property 'nonExistent' of undefined
 
 
-## Try...Catch for Error Handling
+ Try...Catch for Error Handling
 
 Use \`try...catch\` to handle runtime errors gracefully.
 
@@ -166,7 +166,7 @@ try {
 }
 
 
-## Debugging Tools
+ Debugging Tools
 
 Modern browsers provide powerful debugging tools:
 
@@ -175,7 +175,7 @@ Modern browsers provide powerful debugging tools:
 - **Node.js Debugger**: Use \`node inspect\` or \`--inspect\` for server-side debugging.
 
 
-## Debugging Tips
+ Debugging Tips
 
 1. Reproduce the issue consistently.
 2. Isolate the problematic code.
@@ -222,7 +222,7 @@ try {
 
   JavaScript provides several patterns for handling asynchronous operations. These patterns help manage code that doesn't execute sequentially.
 
-  ## Callback Functions
+   Callback Functions
 
   A callback is a function passed as an argument to another function, which is executed after some operation is completed.
 
@@ -238,7 +238,7 @@ try {
   });
 
 
-  ## Promises
+   Promises
 
   Promises represent a value that may be available now, or in the future, or never. They provide a cleaner way to handle asynchronous operations compared to callbacks.
 
@@ -254,7 +254,7 @@ try {
   });
 
 
-  ## Async/Await
+   Async/Await
 
   Async/Await is a modern syntax for working with Promises. It makes asynchronous code look synchronous.
 
@@ -271,7 +271,7 @@ try {
   fetchData();
 
 
-  ## Combining Patterns
+   Combining Patterns
 
   You can combine these patterns to handle complex asynchronous workflows.
 
@@ -338,7 +338,7 @@ try {
 
   Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
 
-  ## Variable Hoisting
+   Variable Hoisting
 
   Variables declared with \`var\` are hoisted to the top of their scope but are not initialized.
 
@@ -353,7 +353,7 @@ try {
   let y = 10;
 
 
-  ## Function Hoisting
+   Function Hoisting
 
   Function declarations are hoisted along with their definitions.
 
@@ -372,7 +372,7 @@ try {
   };
 
 
-  ## Best Practices
+   Best Practices
 
   - Declare variables at the top of their scope to avoid confusion.
   - Use \`let\` and \`const\` instead of \`var\` to prevent unintentional hoisting issues.
@@ -420,7 +420,7 @@ try {
 
   Prototypes are the mechanism by which JavaScript objects inherit properties and methods from other objects.
 
-  ## Prototype Chain
+   Prototype Chain
 
   Every JavaScript object has a prototype. The prototype itself is an object, and it can have its own prototype, forming a chain called the prototype chain.
 
@@ -430,7 +430,7 @@ try {
   console.log(obj.__proto__.__proto__); // null (end of the chain)
 
 
-  ## Adding Methods to Prototypes
+   Adding Methods to Prototypes
 
   You can add methods to an object's prototype to share them across all instances.
 
@@ -447,7 +447,7 @@ try {
   john.greet(); // "Hello, my name is John"
 
 
-  ## Object.create()
+   Object.create()
 
   The \`Object.create()\` method creates a new object with the specified prototype.
 
@@ -462,7 +462,7 @@ try {
   child.greet(); // "Hello from parent"
 
 
-  ## hasOwnProperty()
+   hasOwnProperty()
 
   The \`hasOwnProperty()\` method checks if a property exists directly on the object, not on its prototype.
 
@@ -471,7 +471,7 @@ try {
   console.log(john.hasOwnProperty('greet')); // false
 
 
-  ## Prototypal Inheritance
+   Prototypal Inheritance
 
   Prototypal inheritance allows objects to inherit from other objects.
 
@@ -535,7 +535,7 @@ try {
 
   Conditionals are used to perform different actions based on different conditions.
 
-  ## if...else Statement
+   if...else Statement
 
   The \`if\` statement executes a block of code if a specified condition is true. Use \`else\` to specify a block of code to execute if the condition is false.
 
@@ -547,7 +547,7 @@ try {
   }
 
 
-  ## else if Statement
+   else if Statement
 
   Use \`else if\` to specify a new condition to test if the first condition is false.
 
@@ -561,7 +561,7 @@ try {
   }
 
 
-  ## Ternary Operator
+   Ternary Operator
 
   The ternary operator is a shorthand for \`if...else\`.
 
@@ -569,7 +569,7 @@ try {
   condition ? expressionIfTrue : expressionIfFalse;
 
 
-  ## switch Statement
+   switch Statement
 
   The \`switch\` statement is used to perform different actions based on different conditions.
 
@@ -635,9 +635,9 @@ try {
 
   Loops are used to execute a block of code repeatedly, as long as a specified condition is true.
 
-  ## Types of Loops
+   Types of Loops
 
-  ### for Loop
+  # for Loop
 
   The \`for\` loop is used when the number of iterations is known.
 
@@ -647,7 +647,7 @@ try {
   }
 
 
-  ### while Loop
+  # while Loop
 
   The \`while\` loop is used when the number of iterations is not known and depends on a condition.
 
@@ -659,7 +659,7 @@ try {
   }
 
 
-  ### do...while Loop
+  # do...while Loop
 
   The \`do...while\` loop is similar to the \`while\` loop, but it executes the block of code at least once.
 
@@ -671,7 +671,7 @@ try {
   } while (i < 5);
 
 
-  ### for...of Loop
+  # for...of Loop
 
   The \`for...of\` loop is used to iterate over iterable objects like arrays.
 
@@ -682,7 +682,7 @@ try {
   }
 
 
-  ### for...in Loop
+  # for...in Loop
 
   The \`for...in\` loop is used to iterate over the properties of an object.
 
@@ -736,7 +736,7 @@ try {
 
   Objects are collections of key-value pairs. They are used to store related data and functionality.
 
-  ## Creating Objects
+   Creating Objects
 
   You can create objects using object literals or the \`Object\` constructor.
 
@@ -754,7 +754,7 @@ try {
   car.model = 'Corolla';
 
 
-  ## Accessing Properties
+   Accessing Properties
 
   You can access object properties using dot notation or bracket notation.
 
@@ -763,7 +763,7 @@ try {
   console.log(person['age']); // 30
 
 
-  ## Adding and Removing Properties
+   Adding and Removing Properties
 
   You can add or remove properties dynamically.
 
@@ -772,7 +772,7 @@ try {
   delete person.age;
 
 
-  ## Object Methods
+   Object Methods
 
   Objects can have methods, which are functions stored as properties.
 
@@ -782,7 +782,7 @@ try {
   };
 
 
-  ## Iterating Over Objects
+   Iterating Over Objects
 
   You can use \`for...in\` or \`Object.keys()\` to iterate over object properties.
 
@@ -840,7 +840,7 @@ try {
 
 Arrays are used to store multiple values in a single variable. They are one of the most commonly used data structures in JavaScript.
 
-## Creating Arrays
+ Creating Arrays
 
 You can create arrays using array literals or the \`Array\` constructor.
 
@@ -849,7 +849,7 @@ const numbers = [1, 2, 3, 4, 5];
 const fruits = new Array('apple', 'banana', 'cherry');
 
 
-## Accessing Elements
+ Accessing Elements
 
 Array elements are accessed using their index, which starts at 0.
 
@@ -858,7 +858,7 @@ console.log(numbers[0]); // 1
 console.log(fruits[2]); // "cherry"
 
 
-## Modifying Arrays
+ Modifying Arrays
 
 You can add, remove, or modify elements in an array.
 
@@ -868,7 +868,7 @@ numbers.push(6); // Add an element to the end
 numbers.pop(); // Remove the last element
 
 
-## Iterating Over Arrays
+ Iterating Over Arrays
 
 You can use loops or array methods to iterate over arrays.
 
@@ -880,7 +880,7 @@ for (let i = 0; i < numbers.length; i++) {
 numbers.forEach(num => console.log(num));
 
 
-## Common Array Methods
+ Common Array Methods
 
 - \`push()\`: Add elements to the end
 - \`pop()\`: Remove the last element
@@ -936,7 +936,7 @@ console.log(sum); // 15`,
 
 Promises are used to handle asynchronous operations in JavaScript. They represent a value that may be available now, or in the future, or never.
 
-## Creating a Promise
+ Creating a Promise
 
 A Promise is created using the \`Promise\` constructor, which takes a function with two parameters: \`resolve\` and \`reject\`.
 
@@ -951,7 +951,7 @@ const myPromise = new Promise((resolve, reject) => {
 });
 
 
-## Consuming a Promise
+ Consuming a Promise
 
 You can consume a Promise using \`.then()\`, \`.catch()\`, and \`.finally()\`.
 
@@ -968,7 +968,7 @@ myPromise
   });
 
 
-## Chaining Promises
+ Chaining Promises
 
 You can chain multiple \`.then()\` calls to handle sequential asynchronous operations.
 
@@ -983,7 +983,7 @@ fetch('https://api.example.com/data')
   });
 
 
-## Async/Await
+ Async/Await
 
 Async/Await is a modern way to work with Promises, making asynchronous code look synchronous.
 
@@ -1042,41 +1042,41 @@ checkNumber(5); // "5 is odd"
 
 Modules allow you to break your code into smaller, reusable pieces. Each module can export functions, objects, or variables, and other modules can import them.
 
-## Exporting from a Module
+ Exporting from a Module
 
 You can export values from a module using \`export\`.
 
-### Named Exports
+# Named Exports
 
 javascript
 export const add = (a, b) => a + b;
 export const subtract = (a, b) => a - b;
 
-### Default Export
+# Default Export
 
 javascript
 const multiply = (a, b) => a * b;
 export default multiply;
 
-## Importing a Module
+ Importing a Module
 
 You can import values from a module using \`import\`.
 
-### Importing Named Exports
+# Importing Named Exports
 
 javascript
 
-### Importing Default Export
+# Importing Default Export
 
 javascript
 
-### Importing All Exports
+# Importing All Exports
 
 javascript
 console.log(math.add(2, 3)); // 5
 console.log(math.multiply(2, 3)); // 6
 
-## Benefits of Modules
+ Benefits of Modules
 
 - Code organization and reusability
 - Avoiding global namespace pollution
@@ -1107,7 +1107,7 @@ console.log(multiply(4, 3)); // 12`,
 
 Classes are a template for creating objects. They encapsulate data and behavior that belong together.
 
-## Defining a Class
+ Defining a Class
 
 You can define a class using the \`class\` keyword.
 
@@ -1124,7 +1124,7 @@ class Person {
 }
 
 
-## Creating an Instance
+ Creating an Instance
 
 You can create an instance of a class using the \`new\` keyword.
 
@@ -1133,7 +1133,7 @@ const john = new Person('John', 30);
 john.greet(); // "Hi, my name is John and I am 30 years old."
 
 
-## Inheritance
+ Inheritance
 
 Classes can inherit from other classes using the \`extends\` keyword.
 
@@ -1154,7 +1154,7 @@ jane.greet(); // "Hi, my name is Jane and I am 20 years old."
 jane.study(); // "Jane is studying in grade A."
 
 
-## Static Methods
+ Static Methods
 
 Static methods belong to the class and not to any instance.
 
@@ -1220,7 +1220,7 @@ console.log(Calculator.multiply(4, 5)); // 20`,
 
 Events are actions or occurrences that happen in the browser, such as a user clicking a button, submitting a form, or pressing a key. JavaScript can be used to handle these events.
 
-## Adding Event Listeners
+ Adding Event Listeners
 
 You can use the \`addEventListener\` method to attach an event handler to an element.
 
@@ -1231,7 +1231,7 @@ button.addEventListener('click', () => {
 });
 
 
-## Common Event Types
+ Common Event Types
 
 - \`click\`: Fired when an element is clicked
 - \`mouseover\`: Fired when the mouse hovers over an element
@@ -1240,7 +1240,7 @@ button.addEventListener('click', () => {
 - \`change\`: Fired when the value of an input changes
 
 
-## Removing Event Listeners
+ Removing Event Listeners
 
 You can remove an event listener using the \`removeEventListener\` method.
 
@@ -1253,7 +1253,7 @@ button.addEventListener('click', handleClick);
 button.removeEventListener('click', handleClick);
 
 
-## Event Object
+ Event Object
 
 When an event occurs, an event object is passed to the event handler. This object contains information about the event.
 
@@ -1264,7 +1264,7 @@ button.addEventListener('click', (event) => {
 });
 
 
-## Event Delegation
+ Event Delegation
 
 Event delegation is a technique where you attach a single event listener to a parent element to handle events for its child elements.
 
@@ -1311,7 +1311,7 @@ list.addEventListener('click', (event) => {
 
 The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects.
 
-## Selecting Elements
+ Selecting Elements
 
 You can select elements in the DOM using various methods:
 
@@ -1325,7 +1325,7 @@ const button = document.querySelector('.btn');
 const items = document.querySelectorAll('.item');
 
 
-## Modifying Elements
+ Modifying Elements
 
 You can modify the content and attributes of elements:
 
@@ -1340,7 +1340,7 @@ button.setAttribute('disabled', true);
 button.classList.add('active');
 
 
-## Creating and Appending Elements
+ Creating and Appending Elements
 
 You can create new elements and add them to the DOM:
 
@@ -1350,7 +1350,7 @@ newItem.textContent = 'New Item';
 document.querySelector('ul').appendChild(newItem);
 
 
-## Removing Elements
+ Removing Elements
 
 You can remove elements from the DOM:
 
@@ -1359,7 +1359,7 @@ const itemToRemove = document.querySelector('.item');
 itemToRemove.remove();
 
 
-## Event Handling
+ Event Handling
 
 You can handle events on DOM elements:
 
@@ -1406,7 +1406,7 @@ button.addEventListener('click', () => {
 
 Async/Await is a modern way to handle asynchronous operations in JavaScript. It makes asynchronous code look and behave more like synchronous code.
 
-## Async Functions
+ Async Functions
 
 An \`async\` function always returns a Promise. Inside an async function, you can use the \`await\` keyword to pause the execution until a Promise is resolved.
 
@@ -1420,7 +1420,7 @@ async function fetchData() {
 fetchData();
 
 
-## Error Handling
+ Error Handling
 
 You can use \`try...catch\` blocks to handle errors in async functions.
 
@@ -1438,7 +1438,7 @@ async function fetchData() {
 fetchData();
 
 
-## Combining Async/Await with Other Promises
+ Combining Async/Await with Other Promises
 
 You can use \`Promise.all()\` to wait for multiple Promises to resolve.
 
@@ -1502,7 +1502,7 @@ getPostsAndComments();`,
 
 Error handling is an essential part of writing robust JavaScript code. It ensures that your application can gracefully handle unexpected situations.
 
-## try...catch
+ try...catch
 
 The \`try...catch\` statement allows you to handle errors that occur during the execution of code.
 
@@ -1517,7 +1517,7 @@ try {
 }
 
 
-## throw Statement
+ throw Statement
 
 You can use the \`throw\` statement to create custom errors.
 
@@ -1536,7 +1536,7 @@ try {
 }
 
 
-## finally Block
+ finally Block
 
 The \`finally\` block is executed after the \`try\` and \`catch\` blocks, regardless of whether an error occurred.
 
@@ -1551,7 +1551,7 @@ try {
 }
 
 
-## Error Object
+ Error Object
 
 The \`Error\` object provides information about an error.
 
@@ -1612,7 +1612,7 @@ try {
 
 A closure is a function that has access to its own scope, the scope of the outer function, and the global scope, even after the outer function has returned.
 
-## How Closures Work
+ How Closures Work
 
 Closures are created every time a function is created. They allow functions to "remember" the environment in which they were created.
 
@@ -1631,9 +1631,9 @@ newFunction('inside');
 // Inner Variable: inside
 
 
-## Practical Uses of Closures
+ Practical Uses of Closures
 
-### Data Privacy
+# Data Privacy
 
 Closures can be used to create private variables.
 
@@ -1651,7 +1651,7 @@ counter.increment();
 console.log(counter.getCount()); // 1
 
 
-### Function Factories
+# Function Factories
 
 Closures can be used to create functions with preset arguments.
 
@@ -1710,7 +1710,7 @@ console.log(counter.getCount()); // 1`,
 
 Iterators and generators provide a way to work with data sequentially.
 
-## Iterators
+ Iterators
 
 An iterator is an object that defines a sequence and potentially a return value upon its termination. It implements the \`next()\` method, which returns an object with two properties:
 
@@ -1738,7 +1738,7 @@ console.log(iterator.next()); // { value: 'c', done: false }
 console.log(iterator.next()); // { value: undefined, done: true }
 
 
-## Generators
+ Generators
 
 Generators are a special type of function that can pause and resume their execution. They are defined using the \`function*\` syntax and use the \`yield\` keyword to produce values.
 
@@ -1755,7 +1755,7 @@ console.log(generator.next()); // { value: 'World', done: false }
 console.log(generator.next()); // { value: 'Done', done: true }
 
 
-## Iterating with Generators
+ Iterating with Generators
 
 Generators can be used with \`for...of\` loops to iterate over their values.
 
@@ -1771,7 +1771,7 @@ for (const num of numberGenerator()) {
 }
 
 
-## Practical Use Cases
+ Practical Use Cases
 
 - Lazy evaluation
 - Infinite sequences
@@ -1838,7 +1838,7 @@ console.log([...fib]); // [0, 1, 1, 2, 3]`,
 
 JavaScript provides the \`Date\` object to work with dates and times.
 
-## Creating a Date Object
+ Creating a Date Object
 
 You can create a \`Date\` object in several ways:
 
@@ -1848,7 +1848,7 @@ const specificDate = new Date('2023-01-01'); // Specific date
 const timestamp = new Date(1672531200000); // From timestamp (milliseconds since Jan 1, 1970)
 
 
-## Getting Date and Time Components
+ Getting Date and Time Components
 
 You can extract specific components of a date:
 
@@ -1863,7 +1863,7 @@ console.log(date.getMinutes()); // Minutes
 console.log(date.getSeconds()); // Seconds
 
 
-## Setting Date and Time Components
+ Setting Date and Time Components
 
 You can modify specific components of a date:
 
@@ -1875,7 +1875,7 @@ date.setDate(25);
 console.log(date);
 
 
-## Formatting Dates
+ Formatting Dates
 
 You can format dates using \`toLocaleDateString()\` and \`toLocaleTimeString()\`:
 
@@ -1885,7 +1885,7 @@ console.log(date.toLocaleDateString()); // e.g., "1/1/2023"
 console.log(date.toLocaleTimeString()); // e.g., "12:00:00 AM"
 
 
-## Working with Timestamps
+ Working with Timestamps
 
 You can get the timestamp of a date using \`getTime()\`:
 
@@ -1894,7 +1894,7 @@ const date = new Date();
 console.log(date.getTime()); // Milliseconds since Jan 1, 1970
 
 
-## Calculating Date Differences
+ Calculating Date Differences
 
 You can calculate the difference between two dates:
 
@@ -1944,7 +1944,7 @@ console.log('Days Difference:', daysDifference);`,
 
 Regular expressions (regex) are patterns used to match character combinations in strings.
 
-## Creating a Regular Expression
+ Creating a Regular Expression
 
 You can create a regex using:
 
@@ -1956,14 +1956,14 @@ const regex1 = /hello/i; // Case-insensitive match
 const regex2 = new RegExp('hello', 'i');
 
 
-## Common Flags
+ Common Flags
 
 - \`i\`: Case-insensitive
 - \`g\`: Global match
 - \`m\`: Multiline match
 
 
-## Testing a Pattern
+ Testing a Pattern
 
 You can use \`.test()\` to check if a pattern exists in a string.
 
@@ -1972,7 +1972,7 @@ const regex = /world/;
 console.log(regex.test('Hello world')); // true
 
 
-## Matching a Pattern
+ Matching a Pattern
 
 You can use \`.match()\` to find matches in a string.
 
@@ -1982,7 +1982,7 @@ const matches = str.match(/world/);
 console.log(matches); // ["world"]
 
 
-## Replacing with a Pattern
+ Replacing with a Pattern
 
 You can use \`.replace()\` to replace matched substrings.
 
@@ -1992,7 +1992,7 @@ const newStr = str.replace(/world/, 'JavaScript');
 console.log(newStr); // "Hello JavaScript"
 
 
-## Common Patterns
+ Common Patterns
 
 - \`\\d\`: Matches a digit
 - \`\\w\`: Matches a word character
@@ -2038,7 +2038,7 @@ console.log(words); // ["The", "rain", "in", "Spain", "stays", "mainly", "in", "
 
 Functions in JavaScript are first-class citizens, meaning they can be treated like any other value. This allows for powerful patterns and techniques.
 
-## Higher-Order Functions
+ Higher-Order Functions
 
 A higher-order function is a function that takes another function as an argument or returns a function.
 
@@ -2050,7 +2050,7 @@ function higherOrderFunction(callback) {
 higherOrderFunction(() => console.log('Callback executed'));
 
 
-## Closures
+ Closures
 
 Closures allow functions to access variables from their outer scope even after the outer function has returned.
 
@@ -2065,7 +2065,7 @@ const newFunction = outerFunction('outside');
 newFunction('inside'); // Outer: outside, Inner: inside
 
 
-## Currying
+ Currying
 
 Currying is the process of transforming a function with multiple arguments into a sequence of functions, each taking a single argument.
 
@@ -2080,7 +2080,7 @@ const addFive = add(5);
 console.log(addFive(3)); // 8
 
 
-## Function Composition
+ Function Composition
 
 Function composition is combining multiple functions into a single function.
 
@@ -2094,7 +2094,7 @@ const multiplyAndAdd = compose(add3, multiplyBy2);
 console.log(multiplyAndAdd(5)); // 13
 
 
-## Memoization
+ Memoization
 
 Memoization is an optimization technique to cache the results of expensive function calls.
 
@@ -2155,7 +2155,7 @@ console.log(fibonacci(10)); // 55`,
 
 Recursion is a programming technique where a function calls itself to solve smaller instances of a problem.
 
-## Base Case and Recursive Case
+ Base Case and Recursive Case
 
 A recursive function must have:
 
@@ -2173,14 +2173,14 @@ function factorial(n) {
 console.log(factorial(5)); // 120
 
 
-## Common Use Cases
+ Common Use Cases
 
 - Calculating factorials
 - Traversing data structures (e.g., trees, graphs)
 - Solving mathematical problems (e.g., Fibonacci sequence)
 
 
-## Tail Recursion
+ Tail Recursion
 
 Tail recursion is a special form of recursion where the recursive call is the last operation in the function. It can be optimized by some JavaScript engines to avoid stack overflow.
 
@@ -2195,7 +2195,7 @@ function tailFactorial(n, acc = 1) {
 console.log(tailFactorial(5)); // 120
 
 
-## Recursive Data Structures
+ Recursive Data Structures
 
 Recursion is often used to traverse nested data structures like trees.
 
@@ -2258,16 +2258,16 @@ console.log(flattenArray([1, [2, [3, 4]], 5])); // [1, 2, 3, 4, 5]`,
 
 JavaScript provides two powerful data structures: \`Map\` and \`Set\`.
 
-## Map
+ Map
 
 A \`Map\` is a collection of key-value pairs where keys can be of any type.
 
-### Creating a Map
+# Creating a Map
 
 javascript
 const map = new Map();
 
-### Common Methods
+# Common Methods
 
 - \`set(key, value)\`: Adds a key-value pair
 - \`get(key)\`: Retrieves the value for a key
@@ -2284,7 +2284,7 @@ console.log(map.has('age')); // true
 map.delete('age');
 console.log(map.size); // 1
 
-### Iterating Over a Map
+# Iterating Over a Map
 
 javascript
 map.set('country', 'USA');
@@ -2292,16 +2292,16 @@ for (const [key, value] of map) {
   console.log(\`\${key}: \${value}\`);
 }
 
-## Set
+ Set
 
 A \`Set\` is a collection of unique values.
 
-### Creating a Set
+# Creating a Set
 
 javascript
 const set = new Set();
 
-### Common Methods
+# Common Methods
 
 - \`add(value)\`: Adds a value
 - \`has(value)\`: Checks if a value exists
@@ -2317,7 +2317,7 @@ console.log(set.has(1)); // true
 set.delete(2);
 console.log(set.size); // 1
 
-### Iterating Over a Set
+# Iterating Over a Set
 
 javascript
 set.add(3);
@@ -2325,7 +2325,7 @@ for (const value of set) {
   console.log(value);
 }
 
-## Use Cases
+ Use Cases
 
 - \`Map\`: When you need key-value pairs with keys of any type
 - \`Set\`: When you need a collection of unique values
@@ -2359,7 +2359,7 @@ console.log([...uniqueNumbers]); // [1, 2, 4, 5]`,
 
 Symbols are a unique and immutable primitive data type introduced in ES6. They are often used as unique property keys.
 
-## Creating a Symbol
+ Creating a Symbol
 
 You can create a Symbol using the \`Symbol()\` function.
 
@@ -2371,7 +2371,7 @@ console.log(sym1); // Symbol()
 console.log(sym2); // Symbol(description)
 
 
-## Unique Nature of Symbols
+ Unique Nature of Symbols
 
 Each Symbol is unique, even if they have the same description.
 
@@ -2382,7 +2382,7 @@ const sym2 = Symbol('key');
 console.log(sym1 === sym2); // false
 
 
-## Using Symbols as Object Keys
+ Using Symbols as Object Keys
 
 Symbols can be used as unique keys for object properties.
 
@@ -2394,7 +2394,7 @@ obj[sym] = 123;
 console.log(obj[sym]); // 123
 
 
-## Symbol.for() and Symbol.keyFor()
+ Symbol.for() and Symbol.keyFor()
 
 - \`Symbol.for(key)\`: Creates or retrieves a Symbol from the global Symbol registry.
 - \`Symbol.keyFor(sym)\`: Retrieves the key for a Symbol in the global registry.
@@ -2404,7 +2404,7 @@ const globalSym = Symbol.for('globalKey');
 console.log(Symbol.keyFor(globalSym)); // "globalKey"
 
 
-## Well-Known Symbols
+ Well-Known Symbols
 
 JavaScript provides built-in Symbols for customizing object behavior.
 
@@ -2469,7 +2469,7 @@ console.log(Object.prototype.toString.call(arr)); // "[object CustomArray]"`,
 
 Arrays are ordered collections of values. They can hold values of different types.
 
-## Creating Arrays
+ Creating Arrays
 
 You can create arrays using array literals or the Array constructor:
 
@@ -2478,7 +2478,7 @@ const fruits = ['apple', 'banana', 'orange'];
 const numbers = new Array(1, 2, 3, 4, 5);
 
 
-## Common Array Methods
+ Common Array Methods
 
 - push(): Add elements to the end
 - pop(): Remove the last element
@@ -2536,14 +2536,14 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 
-  ## Algorithm
+   Algorithm
 
   1. Start at the beginning of the array.
   2. Compare each pair of adjacent elements.
   3. Swap them if they are in the wrong order.
   4. Repeat the process for all elements until the array is sorted.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(n) (when the array is already sorted)
   - Worst Case: O(n^2)
@@ -2579,13 +2579,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Selection Sort is a simple sorting algorithm that divides the array into a sorted and an unsorted part. It repeatedly selects the smallest element from the unsorted part and moves it to the sorted part.
 
-  ## Algorithm
+   Algorithm
 
   1. Find the smallest element in the unsorted part of the array.
   2. Swap it with the first element of the unsorted part.
   3. Repeat the process for the remaining unsorted part.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(n^2)
   - Worst Case: O(n^2)
@@ -2623,7 +2623,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Insertion Sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much like sorting playing cards in your hands.
 
-  ## Algorithm
+   Algorithm
 
   1. Start with the second element as the key.
   2. Compare the key with elements before it.
@@ -2631,7 +2631,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
   4. Insert the key in its correct position.
   5. Repeat for all elements.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(n) (when the array is already sorted)
   - Worst Case: O(n^2)
@@ -2668,13 +2668,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Quick Sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array into two subarrays: one with elements less than the pivot and one with elements greater than the pivot.
 
-  ## Algorithm
+   Algorithm
 
   1. Choose a pivot element.
   2. Partition the array into two subarrays.
   3. Recursively apply the same process to the subarrays.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(n log n)
   - Worst Case: O(n^2) (when the pivot is poorly chosen)
@@ -2707,13 +2707,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Counting Sort is a non-comparison-based sorting algorithm that works by counting the frequency of each element and using that information to place elements in their correct positions.
 
-  ## Algorithm
+   Algorithm
 
   1. Count the frequency of each element.
   2. Compute the cumulative sum of counts.
   3. Place elements in their correct positions based on the cumulative counts.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(n + k)
   - Worst Case: O(n + k)
@@ -2759,12 +2759,12 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Radix Sort is a non-comparison-based sorting algorithm that sorts numbers by processing individual digits.
 
-  ## Algorithm
+   Algorithm
 
   1. Find the maximum number to determine the number of digits.
   2. Sort the array digit by digit, starting from the least significant digit.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(nk)
   - Worst Case: O(nk)
@@ -2822,13 +2822,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Merge Sort is a divide-and-conquer algorithm that divides the array into halves, sorts them, and then merges them back together.
 
-  ## Algorithm
+   Algorithm
 
   1. Divide the array into two halves.
   2. Recursively sort each half.
   3. Merge the sorted halves.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(n log n)
   - Worst Case: O(n log n)
@@ -2878,13 +2878,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Linear Search is a simple search algorithm that checks each element in the array until the target element is found.
 
-  ## Algorithm
+   Algorithm
 
   1. Start from the first element.
   2. Compare each element with the target.
   3. Return the index if the target is found, or -1 if not.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(1) (when the target is at the beginning)
   - Worst Case: O(n)
@@ -2917,14 +2917,14 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Binary Search is an efficient search algorithm that works on sorted arrays by repeatedly dividing the search interval in half.
 
-  ## Algorithm
+   Algorithm
 
   1. Start with the middle element.
   2. If the target is equal to the middle element, return its index.
   3. If the target is less than the middle element, search the left half.
   4. If the target is greater than the middle element, search the right half.
 
-  ## Time Complexity
+   Time Complexity
 
   - Best Case: O(1)
   - Worst Case: O(log n)
@@ -2967,26 +2967,26 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   A linked list is a linear data structure where each element (node) contains a value and a reference (link) to the next node in the sequence.
 
-  ## Types of Linked Lists
+   Types of Linked Lists
 
   1. **Singly Linked List**: Each node points to the next node.
   2. **Doubly Linked List**: Each node points to both the next and previous nodes.
   3. **Circular Linked List**: The last node points back to the first node.
 
-  ## Memory Representation
+   Memory Representation
 
   In a linked list, nodes are stored in non-contiguous memory locations. Each node contains:
   - **Data**: The value of the node.
   - **Next**: A pointer/reference to the next node.
 
-  ## Common Operations
+   Common Operations
 
   1. **Traversal**: Visit each node in the list.
   2. **Insertion**: Add a node at the beginning, end, or a specific position.
   3. **Deletion**: Remove a node from the beginning, end, or a specific position.
   4. **Search**: Find a node with a specific value.
 
-  ## Time Complexity
+   Time Complexity
 
   - Traversal: O(n)
   - Insertion: O(1) (at the beginning), O(n) (at a specific position)
@@ -3069,14 +3069,14 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   A stack is a linear data structure that follows the **Last In, First Out (LIFO)** principle. The last element added to the stack is the first one to be removed.
 
-  ## Common Operations
+   Common Operations
 
   1. **Push**: Add an element to the top of the stack.
   2. **Pop**: Remove the top element from the stack.
   3. **Peek**: View the top element without removing it.
   4. **isEmpty**: Check if the stack is empty.
 
-  ## Time Complexity
+   Time Complexity
 
   - Push: O(1)
   - Pop: O(1)
@@ -3128,14 +3128,14 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   A queue is a linear data structure that follows the **First In, First Out (FIFO)** principle. The first element added to the queue is the first one to be removed.
 
-  ## Common Operations
+   Common Operations
 
   1. **Enqueue**: Add an element to the end of the queue.
   2. **Dequeue**: Remove the front element from the queue.
   3. **Peek**: View the front element without removing it.
   4. **isEmpty**: Check if the queue is empty.
 
-  ## Time Complexity
+   Time Complexity
 
   - Enqueue: O(1)
   - Dequeue: O(1)
@@ -3188,19 +3188,19 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   A graph is a data structure consisting of nodes (vertices) and edges that connect pairs of nodes.
 
-  ## Types of Graphs
+   Types of Graphs
 
   1. **Directed Graph**: Edges have a direction.
   2. **Undirected Graph**: Edges do not have a direction.
   3. **Weighted Graph**: Edges have weights or costs.
   4. **Unweighted Graph**: Edges do not have weights.
 
-  ## Representations
+   Representations
 
   1. **Adjacency Matrix**: A 2D array where \`matrix[i][j]\` indicates the presence of an edge between vertex \`i\` and vertex \`j\`.
   2. **Adjacency List**: An array of lists where each list contains the neighbors of a vertex.
 
-  ## Applications
+   Applications
 
   - Social networks
   - Routing algorithms
@@ -3256,7 +3256,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Graph traversal is the process of visiting all the nodes in a graph.
 
-  ## Techniques
+   Techniques
 
   1. **Breadth-First Search (BFS)**:
      - Explores all neighbors of a node before moving to the next level.
@@ -3266,7 +3266,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
      - Explores as far as possible along a branch before backtracking.
      - Uses a stack (or recursion) for implementation.
 
-  ## Applications
+   Applications
 
   - Finding connected components
   - Pathfinding
@@ -3335,7 +3335,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   A cycle in a graph is a path that starts and ends at the same vertex.
 
-  ## Techniques
+   Techniques
 
   1. **Undirected Graph**:
      - Use DFS to check if a visited node is encountered again (excluding the parent node).
@@ -3343,7 +3343,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
   2. **Directed Graph**:
      - Use DFS with a recursion stack to detect back edges.
 
-  ## Applications
+   Applications
 
   - Deadlock detection
   - Dependency resolution
@@ -3409,7 +3409,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Shortest path algorithms are used to find the minimum distance or cost between two nodes in a graph.
 
-  ## Common Algorithms
+   Common Algorithms
 
   1. **Dijkstra's Algorithm**:
      - Finds the shortest path from a source node to all other nodes in a graph with non-negative edge weights.
@@ -3419,7 +3419,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
      - Finds the shortest path from a source node to all other nodes in a graph, even with negative edge weights.
      - Iteratively relaxes all edges up to \`V - 1\` times, where \`V\` is the number of vertices.
 
-  ## Applications
+   Applications
 
   - Network routing
   - GPS navigation
@@ -3508,13 +3508,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   A Minimum Spanning Tree (MST) is a subset of edges in a connected, weighted graph that connects all vertices with the minimum total edge weight and without forming any cycles.
 
-  ## Applications
+   Applications
 
   - Network design (e.g., laying cables, building roads)
   - Approximation algorithms for NP-hard problems
   - Cluster analysis
 
-  ## Algorithms
+   Algorithms
 
   1. **Prim's Algorithm**:
      - Builds the MST by starting with a single vertex and greedily adding the smallest edge that connects a vertex in the MST to a vertex outside the MST.
@@ -3634,13 +3634,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   The Maximum Flow problem involves finding the maximum amount of flow that can be sent from a source node to a sink node in a flow network.
 
-  ## Applications
+   Applications
 
   - Network routing
   - Bipartite matching
   - Image segmentation
 
-  ## Algorithms
+   Algorithms
 
   1. **Ford-Fulkerson Algorithm**:
      - Repeatedly augments the flow along paths from the source to the sink until no more augmenting paths exist.
@@ -3716,7 +3716,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Time complexity is a measure of the amount of time an algorithm takes to complete as a function of the size of its input.
 
-  ## Common Time Complexities
+   Common Time Complexities
 
   1. **O(1)**: Constant time - The algorithm takes the same amount of time regardless of input size.
   2. **O(log n)**: Logarithmic time - The algorithm's time grows logarithmically with input size.
@@ -3726,22 +3726,22 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
   6. **O(2^n)**: Exponential time - Common in algorithms that solve problems by brute force.
   7. **O(n!)**: Factorial time - Common in algorithms that generate all permutations.
 
-  ## Analyzing Time Complexity
+   Analyzing Time Complexity
 
   1. Identify the basic operations in the algorithm.
   2. Count how many times these operations are executed relative to the input size.
   3. Express the result using Big-O notation.
 
-  ## Examples
+   Examples
 
-  ### Example 1: Constant Time (O(1))
+  # Example 1: Constant Time (O(1))
 
   javascript
   function getFirstElement(arr) {
     return arr[0];
   }
 
-  ### Example 2: Linear Time (O(n))
+  # Example 2: Linear Time (O(n))
 
   javascript
   function sumArray(arr) {
@@ -3752,7 +3752,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
     return sum;
   }
 
-  ### Example 3: Quadratic Time (O(n^2))
+  # Example 3: Quadratic Time (O(n^2))
 
   javascript
   function printPairs(arr) {
@@ -3804,7 +3804,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
     Variables are used to store data values. In Python, you don't need to declare the type of a variable; it is inferred from the value assigned.
 
-    ## Declaring Variables
+     Declaring Variables
 
     python
     x = 5       # Integer
@@ -3812,20 +3812,20 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
     name = "Alice"  # String
     is_active = True  # Boolean
 
-    ## Variable Naming Rules
+     Variable Naming Rules
 
     - Must start with a letter or an underscore (\`_\`).
     - Cannot start with a number.
     - Can only contain alphanumeric characters and underscores.
     - Case-sensitive.
 
-    ## Multiple Assignments
+     Multiple Assignments
 
     python
     a, b, c = 1, 2, 3
     x = y = z = 0  # Assign the same value to multiple variables
 
-    ## Constants
+     Constants
 
     By convention, constants are written in uppercase.
 
@@ -3869,7 +3869,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
   Conditionals are used to perform different actions based on different conditions.
 
-  ## if...elif...else Statement
+   if...elif...else Statement
 
   The \`if\` statement executes a block of code if a specified condition is true. Use \`elif\` to specify a new condition to test if the previous condition is false, and \`else\` to specify a block of code to execute if none of the conditions are true.
 
@@ -3882,7 +3882,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
       # code to execute if none of the conditions are true
 
 
-  ## Ternary Operator
+   Ternary Operator
 
   The ternary operator is a shorthand for \`if...else\`.
 
@@ -3925,7 +3925,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
     - **Boolean Type**: bool
     - **Binary Types**: bytes, bytearray, memoryview
 
-    ## Checking Data Types
+     Checking Data Types
 
     Use the \`type()\` function to check the type of a variable.
 
@@ -3933,7 +3933,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
     x = 5
     print(type(x))  # <class 'int'>
 
-    ## Type Conversion
+     Type Conversion
 
     Convert between data types using functions like \`int()\`, \`float()\`, \`str()\`, etc.
 
@@ -3992,7 +3992,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
     - **float**: Floating-point numbers
     - **complex**: Complex numbers
 
-    ## Arithmetic Operations
+     Arithmetic Operations
 
     - Addition: \`+\`
     - Subtraction: \`-\`
@@ -4002,7 +4002,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
     - Modulus: \`%\`
     - Exponentiation: \`**\`
 
-    ## Type Conversion
+     Type Conversion
 
     Convert between numeric types using \`int()\`, \`float()\`, and \`complex()\`.
 
@@ -4048,14 +4048,14 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
     Strings are sequences of characters enclosed in single, double, or triple quotes.
 
-    ## String Operations
+     String Operations
 
     - Concatenation: \`+\`
     - Repetition: \`*\`
     - Slicing: \`[start:end]\`
     - Length: \`len()\`
 
-    ## String Methods
+     String Methods
 
     - \`lower()\`: Convert to lowercase
     - \`upper()\`: Convert to uppercase
@@ -4099,13 +4099,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
     Booleans represent one of two values: \`True\` or \`False\`.
 
-    ## Logical Operators
+     Logical Operators
 
     - \`and\`: Returns \`True\` if both operands are true
     - \`or\`: Returns \`True\` if at least one operand is true
     - \`not\`: Reverses the boolean value
 
-    ## Comparison Operators
+     Comparison Operators
 
     - Equal: \`==\`
     - Not Equal: \`!=\`
@@ -4145,7 +4145,7 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
     Operators are used to perform operations on variables and values.
 
-    ## Types of Operators
+     Types of Operators
 
     1. **Arithmetic Operators**: \`+\`, \`-\`, \`*\`, \`/\`, \`//\`, \`%\`, \`**\`
     2. **Comparison Operators**: \`==\`, \`!=\`, \`>\`, \`<\`, \`>=\`, \`<=\`
@@ -4198,13 +4198,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
     Lists are ordered, mutable collections of items. They can hold items of different types.
 
-    ## Creating Lists
+     Creating Lists
 
     python
     fruits = ["apple", "banana", "cherry"]
     numbers = [1, 2, 3, 4, 5]
 
-    ## Common List Operations
+     Common List Operations
 
     - Accessing elements: \`list[index]\`
     - Adding elements: \`append()\`, \`insert()\`
@@ -4250,13 +4250,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
     Tuples are ordered, immutable collections of items. They can hold items of different types.
 
-    ## Creating Tuples
+     Creating Tuples
 
     python
     fruits = ("apple", "banana", "cherry")
     numbers = (1, 2, 3, 4, 5)
 
-    ## Common Tuple Operations
+     Common Tuple Operations
 
     - Accessing elements: \`tuple[index]\`
     - Slicing: \`tuple[start:end]\`
@@ -4296,13 +4296,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
     Sets are unordered collections of unique items.
 
-    ## Creating Sets
+     Creating Sets
 
     python
     fruits = {"apple", "banana", "cherry"}
     numbers = set([1, 2, 3, 4, 5])
 
-    ## Common Set Operations
+     Common Set Operations
 
     - Adding elements: \`add()\`
     - Removing elements: \`remove()\`, \`discard()\`
@@ -4340,12 +4340,12 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
     Dictionaries are unordered collections of key-value pairs.
 
-    ## Creating Dictionaries
+     Creating Dictionaries
 
     python
     person = {"name": "Alice", "age": 25, "city": "New York"}
 
-    ## Common Dictionary Operations
+     Common Dictionary Operations
 
     - Accessing values: \`dict[key]\`
     - Adding/updating values: \`dict[key] = value\`
@@ -4385,13 +4385,13 @@ console.log(upperFruits); // ["APPLE", "GRAPE", "ORANGE"]`,
 
 A while loop repeatedly executes a block of code as long as a specified condition is true.
 
-## Syntax
+ Syntax
 
 python
 while condition:
     # code to execute
 
-## Example
+ Example
 
 python
 count = 0
@@ -4435,13 +4435,13 @@ while count < 5:
 
 A for loop is used to iterate over a sequence (e.g., list, tuple, string, or range).
 
-## Syntax
+ Syntax
 
 python
 for item in sequence:
     # code to execute
 
-## Example
+ Example
 
 python
 fruits = ["apple", "banana", "cherry"]
@@ -4483,14 +4483,14 @@ for i in range(5):
 
 Functions are blocks of reusable code that perform a specific task.
 
-## Defining a Function
+ Defining a Function
 
 python
 def function_name(parameters):
     # code to execute
     return value
 
-## Example
+ Example
 
 python
 def greet(name):
@@ -4533,13 +4533,13 @@ print("Sum:", sum_all(1, 2, 3, 4, 5))
 
 Arrays are collections of items of the same type. In Python, arrays are provided by the \`array\` module.
 
-## Creating Arrays
+ Creating Arrays
 
 python
 from array import array
 numbers = array('i', [1, 2, 3, 4, 5])
 
-## Common Array Operations
+ Common Array Operations
 
 - Accessing elements: \`array[index]\`
 - Adding elements: \`append()\`
@@ -4580,7 +4580,7 @@ for number in numbers:
 
 Classes are templates for creating objects. Objects are instances of classes.
 
-## Defining a Class
+ Defining a Class
 
 python
 class ClassName:
@@ -4590,7 +4590,7 @@ class ClassName:
     def method_name(self):
         # code to execute
 
-## Example
+ Example
 
 python
 class Person:
@@ -4647,7 +4647,7 @@ person.say_goodbye()
 
   Inheritance allows a class (child class) to inherit attributes and methods from another class (parent class).
 
-  ## Defining Inheritance
+   Defining Inheritance
 
   python
   class Parent:
@@ -4662,7 +4662,7 @@ person.say_goodbye()
       super().__init__(name)
       self.age = age
 
-  ## Example
+   Example
 
   python
   child = Child("Alice", 10)
@@ -4699,7 +4699,7 @@ person.say_goodbye()
 
   An iterator is an object that contains a countable number of values and can be iterated upon.
 
-  ## Creating an Iterator
+   Creating an Iterator
 
   python
   class MyNumbers:
@@ -4715,7 +4715,7 @@ person.say_goodbye()
       else:
         raise StopIteration
 
-  ## Example
+   Example
 
   python
   myclass = MyNumbers()
@@ -4759,7 +4759,7 @@ person.say_goodbye()
 
   Polymorphism allows objects of different classes to be treated as objects of a common superclass.
 
-  ## Example
+   Example
 
   python
   class Animal:
@@ -4816,14 +4816,14 @@ person.say_goodbye()
 
   Modules are files containing Python code that can be imported and reused.
 
-  ## Creating a Module
+   Creating a Module
 
   python
   # mymodule.py
   def greet(name):
     return f"Hello, {name}!"
 
-  ## Importing a Module
+   Importing a Module
 
   python
   print(mymodule.greet("Alice"))
@@ -4853,14 +4853,14 @@ person.say_goodbye()
 
   The \`datetime\` module provides classes for working with dates and times.
 
-  ## Getting the Current Date and Time
+   Getting the Current Date and Time
 
   python
   from datetime import datetime
   now = datetime.now()
   print(now)
 
-  ## Formatting Dates
+   Formatting Dates
 
   python
   formatted = now.strftime("%Y-%m-%d %H:%M:%S")
@@ -4894,7 +4894,7 @@ person.say_goodbye()
 
   The \`math\` module provides mathematical functions.
 
-  ## Common Functions
+   Common Functions
 
   - \`sqrt(x)\`: Square root
   - \`pow(x, y)\`: Power
@@ -4926,14 +4926,14 @@ person.say_goodbye()
 
   The \`json\` module provides functions for working with JSON data.
 
-  ## Parsing JSON
+   Parsing JSON
 
   python
   data = '{"name": "Alice", "age": 25}'
   parsed = json.loads(data)
   print(parsed["name"])
 
-  ## Writing JSON
+   Writing JSON
 
   python
   output = json.dumps(parsed)
@@ -4963,7 +4963,7 @@ person.say_goodbye()
 
   The \`re\` module provides functions for working with regular expressions.
 
-  ## Common Functions
+   Common Functions
 
   - \`search(pattern, string)\`: Search for a match
   - \`findall(pattern, string)\`: Find all matches
@@ -4996,12 +4996,12 @@ person.say_goodbye()
 
   PIP is a package manager for Python.
 
-  ## Installing a Package
+   Installing a Package
 
   python
   pip install package_name
 
-  ## Listing Installed Packages
+   Listing Installed Packages
 
   python
   pip list
@@ -5027,7 +5027,7 @@ person.say_goodbye()
 
   The \`try...except\` block is used to handle exceptions.
 
-  ## Syntax
+   Syntax
 
   python
   try:
@@ -5057,7 +5057,7 @@ person.say_goodbye()
 
   The \`input()\` function is used to take input from the user.
 
-  ## Example
+   Example
 
   python
   name = input("Enter your name: ")
@@ -5082,14 +5082,14 @@ person.say_goodbye()
 
   String formatting allows you to create formatted strings.
 
-  ## Using f-strings
+   Using f-strings
 
   python
   name = "Alice"
   age = 25
   print(f"My name is {name} and I am {age} years old.")
 
-  ## Using format()
+   Using format()
 
   python
   print("My name is {} and I am {} years old.".format(name, age))
@@ -5126,21 +5126,21 @@ person.say_goodbye()
 
     File handling allows you to work with files, such as reading, writing, and deleting them.
 
-    ## Opening a File
+     Opening a File
 
     Use the \`open()\` function to open a file.
 
     python
     file = open("example.txt", "r")  # Modes: "r", "w", "a", "x"
 
-    ## Closing a File
+     Closing a File
 
     Always close a file after working with it.
 
     python
     file.close()
 
-    ## Using \`with\` Statement
+     Using \`with\` Statement
 
     The \`with\` statement automatically closes the file.
 
@@ -5181,7 +5181,7 @@ person.say_goodbye()
 
     You can read files using the \`open()\` function in read mode (\`"r"\`).
 
-    ## Reading Methods
+     Reading Methods
 
     - \`read()\`: Reads the entire file
     - \`readline()\`: Reads one line at a time
@@ -5221,13 +5221,13 @@ person.say_goodbye()
 
     You can write to files using the \`open()\` function in write mode (\`"w"\`) or append mode (\`"a"\`).
 
-    ## Writing to a File
+     Writing to a File
 
     python
     with open("example.txt", "w") as file:
       file.write("Hello, World!")
 
-    ## Appending to a File
+     Appending to a File
 
     python
     with open("example.txt", "a") as file:
@@ -5259,7 +5259,7 @@ person.say_goodbye()
 
     You can delete files using the \`os\` module.
 
-    ## Deleting a File
+     Deleting a File
 
     python
     if os.path.exists("example.txt"):
@@ -5267,7 +5267,7 @@ person.say_goodbye()
     else:
       print("The file does not exist.")
 
-    ## Deleting a Folder
+     Deleting a Folder
 
     Use \`os.rmdir()\` to delete an empty folder.
 
